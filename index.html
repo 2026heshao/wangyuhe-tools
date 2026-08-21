@@ -65,9 +65,11 @@
   .brand .logo{
     width:30px;height:30px;border-radius:9px;
     background:linear-gradient(135deg,var(--accent),var(--accent-2));
-    display:grid;place-items:center;color:#06181a;font-weight:800;font-size:15px;
+    display:flex;align-items:center;justify-content:center;
+    color:#06181a;font-weight:800;font-size:15px;line-height:1;
     box-shadow:0 0 22px rgba(91,192,190,0.35);
   }
+  .brand .logo span{display:inline-block;transform:translateY(-0.5px)}
   .nav-links{display:flex;gap:28px;align-items:center}
   .nav-links a{color:var(--muted);font-size:14.5px;transition:color .25s}
   .nav-links a:hover{color:var(--text)}
@@ -239,7 +241,7 @@
 
 <header class="nav">
   <div class="wrap nav-inner">
-    <a class="brand" href="#top"><span class="logo">W</span> WangYuHe 工具箱</a>
+    <a class="brand" href="#top"><span class="logo"><span>W</span></span> WangYuHe 工具箱</a>
     <nav class="nav-links">
       <a href="#products">全部工具</a>
       <a href="#why">为什么选</a>
@@ -476,7 +478,7 @@
         <details class="qa reveal"><summary>安装包安全吗？会被误报吗？<span class="pm">+</span></summary><div class="a">程序为作者原创、使用 Inno Setup 正常打包。个别杀软可能对未签名的 EXE 弹窗提示，属常见现象，可放心使用或加入白名单。</div></details>
         <details class="qa reveal"><summary>FloatPulse 的知识卡片没内容？<span class="pm">+</span></summary><div class="a">知识卡片数据源为同目录下的「知识库.docx」（仅支持 .docx）。放入你自己的文档后即可显示卡片，程序本身仍正常运行。</div></details>
         <details class="qa reveal"><summary>PyPacker 是安装包还是源码？<span class="pm">+</span></summary><div class="a">PyPacker 现已提供独立安装包（PyPacker_set_up1.0.exe），双击即可安装，无需自行配置 Python 环境。若想自定义打包逻辑，源码仍可自由修改。</div></details>
-        <details class="qa reveal"><summary>生活悬浮球怎么彻底关闭？<span class="pm">+</span></summary><div class="a">悬浮球显示在屏幕上时，<b>右键点击悬浮球 → 退出程序</b> 即可完全退出；若悬浮球已隐藏（如吸边后），直接<b>关闭主窗口</b> 就可以关闭程序。</div></details>
+        <details class="qa reveal"><summary>生活悬浮球怎么彻底关闭？<span class="pm">+</span></summary><div class="a">悬浮球显示在屏幕上时，<b>右键点击悬浮球 → 退出程序</b> 即可完全退出。若悬浮球已通过「隐藏」按钮最小化到桌面，直接<b>关闭主窗口</b> 也能关闭程序；仅吸附到边缘不算隐藏，仍可通过右键悬浮球退出。</div></details>
         <details class="qa reveal"><summary>如何反馈问题或建议？<span class="pm">+</span></summary><div class="a">可通过发布源留言或联系作者 WangYuHe，欢迎提交使用反馈与功能建议。</div></details>
       </div>
     </div>
@@ -487,7 +489,7 @@
   <div class="wrap">
     <div class="foot-grid">
       <div class="col">
-        <a class="brand" href="#top"><span class="logo">W</span> WangYuHe 工具箱</a>
+        <a class="brand" href="#top"><span class="logo"><span>W</span></span> WangYuHe 工具箱</a>
         <span style="margin-top:10px">一套为 Windows 用户打造的轻量效率工具集。</span>
       </div>
       <div class="col">
